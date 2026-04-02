@@ -26,7 +26,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Products-500+-E91E63?style=flat-square" />
+  <img src="https://img.shields.io/badge/Products-633+-E91E63?style=flat-square" />
   <img src="https://img.shields.io/badge/Languages-7-4CAF50?style=flat-square" />
   <img src="https://img.shields.io/badge/Customers-1000+-FFB300?style=flat-square" />
   <img src="https://img.shields.io/badge/Voice_Input-Enabled-9C27B0?style=flat-square" />
@@ -41,7 +41,7 @@ An **AI-powered shopping assistant** built for [Maa Kaali Creations](https://maa
 
 Instead of browsing through hundreds of products, customers simply **chat** with the AI — in their own language — and get personalized saree, lehenga, and suit set recommendations instantly.
 
-> **"Show me red silk saree under ₹1500"** → AI recommends the best matching products from 500+ catalog
+> **"Show me red silk saree under ₹1500"** → AI recommends the best matching products from 633+ catalog
 
 Powered by **osmAPI's Qwen 3.5 model** for intelligent, context-aware conversations.
 
@@ -75,7 +75,7 @@ Powered by **osmAPI's Qwen 3.5 model** for intelligent, context-aware conversati
 <td>
 
 ### 🛒 Shopping
-- 500+ real products from live database
+- 633+ real products from live database
 - Smart price filtering ("under ₹1000")
 - Quick category browsing
 - Product image zoom
@@ -159,7 +159,7 @@ Powered by **osmAPI's Qwen 3.5 model** for intelligent, context-aware conversati
         │             │            │
         ▼             ▼            ▼
    Show Info    Show Cheapest   Filter Products
-     Card       Alternatives    from 500+ DB
+     Card       Alternatives    from 633+ DB
                                      │
                                      ▼
                               ┌──────────────┐
@@ -216,7 +216,7 @@ Open [http://localhost:5173](http://localhost:5173)
 
 [**maakaalicreations.in**](https://maakaalicreations.in) — A trusted Indian ethnic wear e-commerce brand.
 
-- 🛍️ **500+ Products** — Sarees, Lehengas, Suit Sets
+- 🛍️ **633+ Products** — Sarees, Lehengas, Suit Sets
 - 👥 **1000+ Happy Customers**
 - 🚚 **Free Shipping** on orders above ₹999
 - 💳 **COD Available**
