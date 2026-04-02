@@ -109,10 +109,26 @@ const specialMsgs = {
 
 export default function App() {
   const [lang, setLang] = useState('en')
+  const [dark, setDark] = useState(false)
   const [messages, setMessages] = useState([{ role:'assistant', content:WELCOME.en, products:[] }])
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const endRef = useRef(null)
+
+  useEffect(() => {
+    const savedDark = localStorage.getItem('mkc-dark') === 'true'
+    setDark(savedDark)
+    if (savedDark) document.documentElement.classList.add('dark')
+  }, [])
+
+  function toggleDark() {
+    setDark(d => {
+      const next = !d
+      localStorage.setItem('mkc-dark', next)
+      document.documentElement.classList.toggle('dark', next)
+      return next
+    })
+  }
 
   useEffect(() => { try { const s=localStorage.getItem('mkc-chat'); if(s){const{msgs,language}=JSON.parse(s);if(msgs?.length>0){setMessages(msgs);setLang(language||'en')}} } catch(e){} }, [])
   useEffect(() => { if(messages.length>1) localStorage.setItem('mkc-chat',JSON.stringify({msgs:messages,language:lang})) }, [messages,lang])
@@ -158,17 +174,17 @@ export default function App() {
   const showIntro = messages.length <= 1
 
   return (
-    <div className="h-full flex justify-center bg-[#fff7ed]">
+    <div className="h-full flex justify-center bg-[#fff7ed] dark:bg-gray-950 transition-colors">
       <div className="w-full max-w-md flex flex-col h-full p-2 sm:p-3">
 
-        <Header lang={lang} langs={LANGS} onLangChange={handleLangChange} showNewChat={!showIntro} onNewChat={resetChat} />
+        <Header lang={lang} langs={LANGS} onLangChange={handleLangChange} showNewChat={!showIntro} onNewChat={resetChat} dark={dark} onToggleDark={toggleDark} />
 
         {showIntro && <QuickCategories onSelect={handleSend} lang={lang} />}
 
         <ChatWindow messages={messages} isLoading={isLoading} messagesEndRef={endRef} />
 
         {/* Input */}
-        <div className="flex-shrink-0 bg-white rounded-xl p-2 mt-1.5 border border-brand-100 shadow-sm">
+        <div className="flex-shrink-0 bg-white dark:bg-gray-900 rounded-xl p-2 mt-1.5 border border-brand-100 dark:border-gray-800 shadow-sm">
           <div className="flex gap-1.5 items-end">
             <VoiceButton lang={LANGS[lang]?.voice || 'en-IN'} onResult={setInput} />
             <textarea
@@ -176,7 +192,7 @@ export default function App() {
               onChange={e => setInput(e.target.value)}
               onKeyDown={e => { if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();handleSend()} }}
               placeholder={lang==='en'?"Type or speak...":lang==='hi'?"Type karein ya bolein...":"Type or speak..."}
-              className="flex-1 resize-none bg-transparent outline-none text-gray-800 placeholder-gray-400 text-sm max-h-20 min-h-[36px] py-1.5 px-1"
+              className="flex-1 resize-none bg-transparent outline-none text-gray-800 dark:text-gray-100 placeholder-gray-400 text-sm max-h-20 min-h-[36px] py-1.5 px-1"
               rows={1} disabled={isLoading}
             />
             <button onClick={()=>handleSend()} disabled={!input.trim()||isLoading}
