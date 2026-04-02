@@ -228,8 +228,6 @@ What makes us unique? **The entire store — backend, frontend, admin panel, SEO
 - 💳 **COD Available** — Pay at your doorstep
 - ↩️ **24-Hour No-Questions-Asked Returns**
 - 🤖 **100% AI-Built** — Backend, Frontend, Admin Panel, Email System
-- 📦 **75+ Orders Delivered** — Real revenue, real business
-- 🏷️ **Up to 67% OFF** — Best prices guaranteed
 
 </td>
 <td>
