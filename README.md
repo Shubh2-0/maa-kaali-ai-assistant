@@ -1,139 +1,198 @@
 <p align="center">
-  <img src="public/logo.png" alt="Maa Kaali Creations" width="120" />
+  <img src="public/logo.png" alt="Maa Kaali Creations" width="140" />
 </p>
 
-<h1 align="center">Maa Kaali Creations — AI Shopping Assistant</h1>
+<h1 align="center">🛍️ Maa Kaali Creations — AI Shopping Assistant</h1>
 
 <p align="center">
-  <strong>An intelligent, multilingual shopping chatbot for <a href="https://maakaalicreations.in">maakaalicreations.in</a></strong>
-</p>
-
-<p align="center">
-  <a href="https://saree-chatbot.vercel.app">Live Demo</a> &nbsp;|&nbsp;
-  <a href="https://maakaalicreations.in">Visit Store</a> &nbsp;|&nbsp;
-  <a href="https://www.instagram.com/maakaali_creations">Instagram</a> &nbsp;|&nbsp;
-  <a href="https://www.youtube.com/@MaaKaali_Creations">YouTube</a>
+  <strong>Smart, multilingual AI chatbot for <a href="https://maakaalicreations.in">maakaalicreations.in</a> — India's trusted ethnic wear brand</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white" alt="React" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/osmAPI-Qwen_3.5-FF6B35?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiLz48L3N2Zz4=&logoColor=white" alt="osmAPI" />
-  <img src="https://img.shields.io/badge/Vercel-Deployed-000?logo=vercel&logoColor=white" alt="Vercel" />
-  <img src="https://img.shields.io/badge/Products-500+-E91E63" alt="Products" />
-  <img src="https://img.shields.io/badge/Languages-7-4CAF50" alt="Languages" />
+  <a href="https://saree-chatbot.vercel.app"><img src="https://img.shields.io/badge/🚀_Live_Demo-Visit_Now-E91E63?style=for-the-badge" alt="Live Demo" /></a>
+  &nbsp;
+  <a href="https://maakaalicreations.in"><img src="https://img.shields.io/badge/🌐_Store-maakaalicreations.in-FF6B35?style=for-the-badge" alt="Store" /></a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white" alt="Cloudinary" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/osmAPI-Qwen_3.5-FF6B35?style=flat-square" alt="osmAPI" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Products-500+-E91E63?style=flat-square" />
+  <img src="https://img.shields.io/badge/Languages-7-4CAF50?style=flat-square" />
+  <img src="https://img.shields.io/badge/Customers-1000+-FFB300?style=flat-square" />
+  <img src="https://img.shields.io/badge/Voice_Input-Enabled-9C27B0?style=flat-square" />
+  <img src="https://img.shields.io/badge/Dark_Mode-Supported-212121?style=flat-square" />
 </p>
 
 ---
 
-## About
+## 🎯 What is this?
 
-**Maa Kaali Creations** ([maakaalicreations.in](https://maakaalicreations.in)) is a trusted Indian ethnic wear e-commerce brand with **1000+ happy customers** selling sarees, lehengas, and suit sets.
+An **AI-powered shopping assistant** built for [Maa Kaali Creations](https://maakaalicreations.in) — a real Indian ethnic wear e-commerce store with **1000+ happy customers**.
 
-This AI Shopping Assistant is built as a conversational chatbot that helps customers discover and shop products naturally — just like talking to a real salesperson. Powered by **osmAPI's Qwen 3.5 model**, it understands customer preferences and recommends the right products from our catalog of **500+ real products** fetched from our live database.
+Instead of browsing through hundreds of products, customers simply **chat** with the AI — in their own language — and get personalized saree, lehenga, and suit set recommendations instantly.
 
----
+> **"Show me red silk saree under ₹1500"** → AI recommends the best matching products from 500+ catalog
 
-## Features
-
-| Feature | Description |
-|---------|-------------|
-| **AI Chat** | Conversational shopping powered by osmAPI (Qwen 3.5) |
-| **7 Languages** | English, Hindi, Punjabi, Gujarati, Tamil, Bengali, Marathi |
-| **Voice Input** | Speak to search — Web Speech API with language detection |
-| **500+ Products** | Real product data from live MongoDB database |
-| **Smart Recommendations** | AI picks the best products based on your query |
-| **Dark Mode** | Toggle between light and dark themes |
-| **Typing Effect** | ChatGPT-style letter-by-letter response animation |
-| **Product Share** | Share via WhatsApp, Facebook, Twitter/X, or copy link |
-| **Image Zoom** | Tap any product image for fullscreen view |
-| **Special Cards** | Blog, Contact, About, Shipping — beautiful info cards |
-| **Quick Categories** | One-tap browsing: Sarees, Lehengas, Suit Sets, Budget |
-| **Smart Fallbacks** | No blank screens ever — handles API failures gracefully |
-| **Price Filtering** | "Saree under ₹1000" — understands budget queries |
-| **Chat Persistence** | Conversation saved across page refreshes |
-| **Responsive** | Optimized for mobile and desktop |
-| **Social Links** | Instagram, Facebook, YouTube — real brand handles |
+Powered by **osmAPI's Qwen 3.5 model** for intelligent, context-aware conversations.
 
 ---
 
-## Screenshots
+## ✨ Features
 
-### Light Mode
-```
-┌──────────────────────────────┐
-│  🔴 Maa Kaali Creations     │
-│     AI Shopping Assistant    │
-│                              │
-│  [Sarees] [Lehengas] [Suits]│
-│                              │
-│  🤖 Welcome! What are you   │
-│     looking for today?       │
-│                              │
-│  ┌─────┐ ┌─────┐            │
-│  │ 👗  │ │ 👗  │            │
-│  │Saree│ │Saree│            │
-│  │₹1299│ │₹1650│            │
-│  └─────┘ └─────┘            │
-│                              │
-│  [🎤] Type or speak... [→]  │
-│  📷 Instagram 📘 Facebook   │
-└──────────────────────────────┘
-```
+<table>
+<tr>
+<td width="50%">
+
+### 🤖 AI & Chat
+- Conversational shopping (osmAPI + Qwen 3.5)
+- ChatGPT-style typing animation
+- Smart product recommendations
+- Chat history saved across refreshes
+- Handles API failures gracefully
+
+</td>
+<td width="50%">
+
+### 🌍 Languages & Voice
+- **7 Languages:** English, Hindi, Punjabi, Gujarati, Tamil, Bengali, Marathi
+- 🎤 Voice input with language-specific recognition
+- Language-aware welcome messages
+- Regional script support
+
+</td>
+</tr>
+<tr>
+<td>
+
+### 🛒 Shopping
+- 500+ real products from live database
+- Smart price filtering ("under ₹1000")
+- Quick category browsing
+- Product image zoom
+- Direct links to product pages
+
+</td>
+<td>
+
+### 🎨 UI/UX
+- 🌙 Dark mode toggle
+- Share via WhatsApp, Facebook, Twitter/X
+- Copy product link
+- Special info cards (Blog, Contact, Shipping)
+- Fully responsive (Mobile + Desktop)
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Tech Stack
+## 🏗️ Tech Stack
+
+<table>
+<tr>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" />
+  <br><sub>React 18</sub>
+</td>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind" />
+  <br><sub>Tailwind CSS</sub>
+</td>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=vite" width="48" height="48" alt="Vite" />
+  <br><sub>Vite</sub>
+</td>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=vercel" width="48" height="48" alt="Vercel" />
+  <br><sub>Vercel</sub>
+</td>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=mongodb" width="48" height="48" alt="MongoDB" />
+  <br><sub>MongoDB</sub>
+</td>
+<td align="center" width="96">
+  <img src="https://skillicons.dev/icons?i=nodejs" width="48" height="48" alt="Node.js" />
+  <br><sub>Node.js</sub>
+</td>
+</tr>
+</table>
 
 | Layer | Technology |
 |-------|-----------|
-| Frontend | React 18 + Vite |
-| Styling | Tailwind CSS |
-| AI Model | Qwen 3.5 via osmAPI |
-| Hosting | Vercel (Serverless) |
-| Database | MongoDB (Live API) |
-| Voice | Web Speech API |
-| Images | Cloudinary CDN |
+| **AI Model** | Qwen 3.5 via [osmAPI](https://osmapi.com) |
+| **Frontend** | React 18 + Vite |
+| **Styling** | Tailwind CSS |
+| **Hosting** | Vercel (Serverless Functions) |
+| **Database** | MongoDB (Live API) |
+| **Images** | Cloudinary CDN |
+| **Voice** | Web Speech API |
 
 ---
 
-## Architecture
+## 🏛️ Architecture
 
 ```
-User Input
-    │
-    ├── Special Query? (blog/contact/about/shipping)
-    │   └── Show Special Card (no API call)
-    │
-    ├── No Products Match?
-    │   └── Show cheapest alternatives
-    │
-    └── Normal Query
-        ├── Filter relevant products from 500+ catalog
-        ├── Send to osmAPI (Qwen 3.5) with product context
-        ├── Extract RECOMMEND: indices from AI response
-        ├── Clean thinking/reasoning text
-        └── Display response + product cards
-            │
-            └── API Fails? → Show fallback + random products
+┌─────────────────────────────────────────────────┐
+│                   User Input                     │
+│            (Text / Voice / Category)             │
+└──────────────────────┬──────────────────────────┘
+                       │
+          ┌────────────┼────────────┐
+          ▼            ▼            ▼
+   ┌──────────┐ ┌──────────┐ ┌──────────┐
+   │ Special  │ │ No Match │ │  Normal  │
+   │  Query   │ │ Found    │ │  Query   │
+   │(blog,    │ │          │ │          │
+   │ contact) │ │          │ │          │
+   └────┬─────┘ └────┬─────┘ └────┬─────┘
+        │             │            │
+        ▼             ▼            ▼
+   Show Info    Show Cheapest   Filter Products
+     Card       Alternatives    from 500+ DB
+                                     │
+                                     ▼
+                              ┌──────────────┐
+                              │   osmAPI      │
+                              │  Qwen 3.5    │
+                              └──────┬───────┘
+                                     │
+                                     ▼
+                              Clean Response
+                              + Product Cards
+                                     │
+                           ┌─────────┼─────────┐
+                           ▼         ▼         ▼
+                        Typing    Product    Share
+                        Effect    Zoom     Buttons
 ```
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 ```bash
-# Clone
+# Clone the repo
 git clone https://github.com/Shubh2-0/maa-kaali-ai-assistant.git
 cd maa-kaali-ai-assistant
 
-# Install
+# Install dependencies
 npm install
 
 # Add your osmAPI key
 echo "OSM_API_KEY=your_key_here" > .env
 
-# Run
+# Start development server
 npm run dev
 ```
 
@@ -141,43 +200,69 @@ Open [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## Environment Variables
+## 🔐 Environment Variables
 
 | Variable | Description |
 |----------|-------------|
-| `OSM_API_KEY` | Your osmAPI key ([get one here](https://osmapi.com)) |
+| `OSM_API_KEY` | Your osmAPI key — [get one here](https://osmapi.com) |
 
 ---
 
-## About the Store
+## 🏪 About Maa Kaali Creations
 
-**Maa Kaali Creations** — [maakaalicreations.in](https://maakaalicreations.in)
+<table>
+<tr>
+<td>
 
-- Indian ethnic wear (Sarees, Lehengas, Suit Sets)
-- 1000+ happy customers
-- 500+ products
-- Free shipping on orders above ₹999
-- COD available
-- Easy 7-day returns
+[**maakaalicreations.in**](https://maakaalicreations.in) — A trusted Indian ethnic wear e-commerce brand.
 
-### Connect with us
+- 🛍️ **500+ Products** — Sarees, Lehengas, Suit Sets
+- 👥 **1000+ Happy Customers**
+- 🚚 **Free Shipping** on orders above ₹999
+- 💳 **COD Available**
+- ↩️ **Easy 7-Day Returns**
+- 🤖 **Entire store built using AI tools** — Backend, Frontend, Admin Panel
 
-- [Instagram](https://www.instagram.com/maakaali_creations)
-- [Facebook](https://www.facebook.com/profile.php?id=61577363595465)
-- [YouTube](https://www.youtube.com/@MaaKaali_Creations)
+</td>
+<td>
+  <img src="public/logo.png" width="200" alt="Maa Kaali Creations" />
+</td>
+</tr>
+</table>
+
+### 📱 Follow Us
+
+<p>
+  <a href="https://www.instagram.com/maakaali_creations"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  <a href="https://www.facebook.com/profile.php?id=61577363595465"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
+  <a href="https://www.youtube.com/@MaaKaali_Creations"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" /></a>
+</p>
 
 ---
 
-## Author
+## 👨‍💻 Author
 
-**Shubham Bhati**
-- [Portfolio](https://shubh2-0.github.io)
-- [LinkedIn](https://www.linkedin.com/in/bhatishubham)
-- [GitHub](https://github.com/Shubh2-0)
+<table>
+<tr>
+<td>
+
+### **Shubham Bhati**
+
+Co-founder of Maa Kaali Creations
+
+<a href="https://www.linkedin.com/in/bhatishubham"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://shubh2-0.github.io"><img src="https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio" /></a>
+<a href="https://github.com/Shubh2-0"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://wa.me/919691751718"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" /></a>
+<a href="mailto:shubhambhati26@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+
+</td>
+</tr>
+</table>
 
 ---
 
 <p align="center">
-  Built with osmAPI for the <strong>osmAPI Hiring Task</strong><br/>
-  <sub>Powered by osmAPI + Qwen AI</sub>
+  Built with ❤️ using <strong>osmAPI</strong> for the <strong>osmAPI Hiring Task</strong><br/><br/>
+  <img src="https://img.shields.io/badge/Powered_by-osmAPI_+_Qwen_AI-FF6B35?style=for-the-badge" alt="Powered by osmAPI" />
 </p>
