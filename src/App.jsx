@@ -167,7 +167,8 @@ export default function App() {
         setMessages(prev=>[...prev,{role:'assistant',content:cleanResponse(ai),products:recs.length>0?recs:rp.slice(0,4)}])
       }
     } catch(e) {
-      setMessages(prev=>[...prev,{role:'assistant',content:ERROR_MSG[lang]||ERROR_MSG.en,products:[]}])
+      const fallbackProducts = [...products].sort(()=>Math.random()-0.5).slice(0,4)
+      setMessages(prev=>[...prev,{role:'assistant',content:FALLBACK[lang]||FALLBACK.en,products:fallbackProducts}])
     } finally { setIsLoading(false) }
   }
 
