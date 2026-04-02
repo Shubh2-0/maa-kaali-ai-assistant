@@ -217,10 +217,10 @@ Open [http://localhost:5173](http://localhost:5173)
 [**maakaalicreations.in**](https://maakaalicreations.in) — A trusted Indian ethnic wear e-commerce brand.
 
 - 🛍️ **633+ Products** — Sarees, Lehengas, Suit Sets
-- 👥 **1000+ Happy Customers**
-- 🚚 **Free Shipping** on orders above ₹999
+- 👥 **1000+ Happy Customers & Growing**
+- 🚚 **Free Shipping** on every order
 - 💳 **COD Available**
-- ↩️ **Easy 7-Day Returns**
+- ↩️ **Easy 24-Hour Returns**
 - 🤖 **Entire store built using AI tools** — Backend, Frontend, Admin Panel
 
 </td>

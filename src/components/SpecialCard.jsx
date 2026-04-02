@@ -43,7 +43,7 @@ const CARDS = {
   },
   shipping: {
     icon: '🚚', title: 'Shipping & Returns',
-    description: 'Free delivery on orders above ₹999. Easy 7-day return policy. Cash on Delivery available.',
+    description: 'Free delivery on every order. Easy 24-hour return policy. Cash on Delivery available.',
     link: 'https://maakaalicreations.in/shipping-policy', btnText: 'View Policy',
     gradient: 'from-blue-500 to-cyan-600', bg: 'bg-gradient-to-br from-blue-50 to-cyan-50', border: 'border-blue-200',
   },
