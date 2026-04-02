@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html, body, #root { height: 100%; overflow: hidden; }
+body { font-family: 'Inter', sans-serif; background: #fff7ed; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #fdba74; border-radius: 2px; }
+
+/* Typing dots */
+@keyframes bounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-5px); }
+}
+.typing-dot { animation: bounce 1.4s infinite; }
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* Message animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.msg-anim { animation: fadeIn 0.35s ease-out; }
+
+/* Product hover */
+.prod-card { transition: all 0.25s cubic-bezier(.4,0,.2,1); }
+.prod-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(234,88,12,0.12); }
+
+/* Trending ticker */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll { animation: scroll 30s linear infinite; }
+.animate-scroll:hover { animation-play-state: paused; }
+
+/* Pulse glow for send button */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(234,88,12,0.3); }
+  50% { box-shadow: 0 0 12px 4px rgba(234,88,12,0.15); }
+}
+.send-btn:not(:disabled) { animation: pulse-glow 2s infinite; }
+
+/* Category card shine */
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+.cat-card:hover::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 50%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shine 0.6s ease;
+}
+
+/* Mobile height fix */
+@supports (-webkit-touch-callout: none) {
+  html, body, #root { height: -webkit-fill-available; }
+}
