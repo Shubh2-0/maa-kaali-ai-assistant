@@ -214,14 +214,22 @@ Open [http://localhost:5173](http://localhost:5173)
 <tr>
 <td>
 
-[**maakaalicreations.in**](https://maakaalicreations.in) — A trusted Indian ethnic wear e-commerce brand.
+### [maakaalicreations.in](https://maakaalicreations.in)
+
+**Maa Kaali Creations** is an Indian ethnic wear e-commerce brand that brings premium quality sarees, lehengas, and suit sets to customers across India — at honest, affordable prices.
+
+What makes us unique? **The entire store — backend, frontend, admin panel, SEO, email system — is built using AI tools.** No traditional development team. Just smart use of modern AI to build a real, revenue-generating business.
+
+#### Our Store at a Glance
 
 - 🛍️ **633+ Products** — Sarees, Lehengas, Suit Sets
 - 👥 **1000+ Happy Customers & Growing**
-- 🚚 **Free Shipping** on every order
-- 💳 **COD Available**
-- ↩️ **Easy 24-Hour Returns**
-- 🤖 **Entire store built using AI tools** — Backend, Frontend, Admin Panel
+- 🚚 **Free Shipping** on every order across India
+- 💳 **COD Available** — Pay at your doorstep
+- ↩️ **24-Hour No-Questions-Asked Returns**
+- 🤖 **100% AI-Built** — Backend, Frontend, Admin Panel, Email System
+- 📦 **75+ Orders Delivered** — Real revenue, real business
+- 🏷️ **Up to 67% OFF** — Best prices guaranteed
 
 </td>
 <td>
