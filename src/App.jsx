@@ -152,7 +152,25 @@ export default function App() {
 
     setIsLoading(true)
     try {
-      const rp = filterRelevantProducts(msg)
+      let rp = filterRelevantProducts(msg)
+
+      // If no products match filters, show closest alternatives
+      if (rp.length === 0) {
+        const noMatchMsgs = {
+          en: "We don't have products in that exact range, but here are our most affordable options! 🛍️",
+          hi: "Is range mein products nahi hain, lekin yeh dekhiye humare sabse saste options! 🛍️",
+          pa: "ਇਸ ਰੇਂਜ ਵਿੱਚ ਉਤਪਾਦ ਨਹੀਂ ਹਨ, ਪਰ ਇਹ ਸਾਡੇ ਸਭ ਤੋਂ ਸਸਤੇ ਵਿਕਲਪ ਹਨ! 🛍️",
+          gu: "આ રેન્જમાં ઉત્પાદનો નથી, પણ આ અમારા સૌથી સસ્તા વિકલ્પો છે! 🛍️",
+          ta: "இந்த விலை வரம்பில் தயாரிப்புகள் இல்லை, ஆனால் இவை எங்கள் மலிவான விருப்பங்கள்! 🛍️",
+          bn: "এই রেঞ্জে পণ্য নেই, তবে এগুলো আমাদের সবচেয়ে সাশ্রয়ী! 🛍️",
+          mr: "या रेंजमध्ये उत्पादने नाहीत, पण हे आमचे सर्वात स्वस्त पर्याय आहेत! 🛍️",
+        }
+        const cheapest = [...products].sort((a,b) => a.price - b.price).slice(0, 4)
+        setMessages(prev=>[...prev,{role:'assistant',content:noMatchMsgs[lang]||noMatchMsgs.en,products:cheapest}])
+        setIsLoading(false)
+        return
+      }
+
       const ctx = buildProductContext(rp)
       const hist = messages.slice(-6).map(m=>({role:m.role,content:m.content}))
       const prompt = PROMPTS[lang] || PROMPTS.en
