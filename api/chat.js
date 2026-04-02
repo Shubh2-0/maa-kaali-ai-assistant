@@ -16,13 +16,6 @@ export default async function handler(req, res) {
   }
 
   try {
-    const modifiedMessages = messages.map((m, i) => {
-      if (i === messages.length - 1 && m.role === 'user') {
-        return { ...m, content: m.content + ' /no_think' }
-      }
-      return m
-    })
-
     const response = await fetch('https://api.osmapi.com/v1/chat/completions', {
       method: 'POST',
       headers: {
@@ -31,9 +24,9 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model: 'qwen3.5-397b-a17b',
-        messages: modifiedMessages,
+        messages,
         temperature: 0.7,
-        max_tokens: 800,
+        max_tokens: 1500,
       }),
     })
 
@@ -47,17 +40,21 @@ export default async function handler(req, res) {
     const msg = data.choices?.[0]?.message
 
     let content = msg?.content || ''
-    if (!content && msg?.reasoning) {
-      content = msg.reasoning
-    }
 
+    // If content is empty (model spent all tokens thinking), return empty
+    // Do NOT use reasoning field — it contains garbage thinking text
+
+    // Clean any thinking tags
     content = content
       .replace(/<think>[\s\S]*?<\/think>/gi, '')
       .replace(/\/no_think/gi, '')
+      .replace(/Thinking Process:[\s\S]*/gi, '')
+      .replace(/\*\*Analyze[\s\S]*/gi, '')
+      .replace(/^\s*\d+\.\s+(Analyze|Review|Select|Draft|Check|Determine|Final)[\s\S]*/gmi, '')
       .trim()
 
     if (data.choices?.[0]?.message) {
-      data.choices[0].message.content = content || 'Main aapki madad karne ke liye tayyar hun! Kya dhundh rahe hain?'
+      data.choices[0].message.content = content || ''
     }
 
     return res.status(200).json(data)
